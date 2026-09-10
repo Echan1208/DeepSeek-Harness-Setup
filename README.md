@@ -103,6 +103,6 @@
 | dsh-cost-meter | [Han-1413141/dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) |
 | @liustack/modsearch | [liustack/modsearch](https://github.com/liustack/modsearch) |
 | ppt-master（技能） | [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master) |
-| dsh-update-checker（本包已禁用） | [Airmetro/dsh-update-checker](https://github.com/Airmetro/dsh-update-checker) |
+| dsh-update-checker | [Airmetro/dsh-update-checker](https://github.com/Airmetro/dsh-update-checker) |
 
 > 本仓库仅做离线打包与分发，便于内网 / 受限网络环境一键安装；各插件版权归原作者所有，请遵守各仓库的开源协议（多数为 MIT）。
