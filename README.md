@@ -2,9 +2,9 @@
 
 # DeepSeek Harness 安装包（Windows 离线版）
 
-一键安装 DeepSeek Harness，内置 Node.js 与全部插件、依赖、技能，**完全离线可用**——同事无需安装 Node.js、无需联网拉取任何依赖。
+一键安装 DeepSeek Harness，内置 Node.js 与全部插件、依赖、技能，**完全离线可用**——用户无需安装 Node.js、无需联网拉取任何依赖。
 
-> 版本：**0.1.5-rc.1-r2** ｜ 内置 Node.js **v24.20.0** ｜ 适用 64 位 Windows 10 / 11
+> 版本：**0.1.5-rc.1-r3** ｜ 内置 Node.js **v24.20.0** ｜ 适用 64 位 Windows 10 / 11
 
 ## 本版亮点
 
@@ -15,7 +15,7 @@
 
 | 文件 | 大小 | 说明 |
 | --- | --- | --- |
-| [DeepSeekHarness-Setup-0.1.5-rc.1-r2.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.1-r2.exe) | 约 181 MB | 最新版安装包 |
+| [DeepSeekHarness-Setup-0.1.5-rc.1-r3.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.1-r3.exe) | 约 181 MB | 最新版安装包 |
 
 > 历史版本见 [Releases](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases) 页面。
 
@@ -28,7 +28,7 @@
 - 磁盘空间：约 1.7 GB（安装目录约 1 GB + 用户数据约 0.7 GB）
 
 ### 安装步骤
-1. 下载并双击 `DeepSeekHarness-Setup-0.1.5-rc.1-r2.exe`
+1. 下载并双击 `DeepSeekHarness-Setup-0.1.5-rc.1-r3.exe`
 2. 选择安装位置（默认 `%LOCALAPPDATA%\Programs\DeepSeekHarness`，全程**无需管理员权限**）
 3. 点击「安装」，等待进度条完成
 4. 安装完成后，桌面和开始菜单会自动生成「DeepSeek Harness」快捷方式
@@ -36,7 +36,7 @@
 ### 首次使用
 1. 双击桌面上的「DeepSeek Harness」快捷方式
 2. 首次启动需 1–2 分钟初始化（会自动把插件依赖复制到用户数据目录，之后启动就很快）
-3. 在界面中填入你自己的 DeepSeek API Key —— 安装包**不含任何密钥**，每位同事需使用自己的 Key
+3. 在界面中填入你自己的 DeepSeek API Key —— 安装包**不含任何密钥**，每位用户需使用自己的 Key
 4. 填入后即可开始使用
 
 ### 卸载
@@ -83,9 +83,9 @@
 
 ## 说明
 
-1. **完全离线可用**：安装包已内置 Node.js 及全部依赖，同事无需安装 Node.js、无需联网拉取任何依赖。
-2. **已禁用自动更新**：安装包中移除了「自动更新检查」插件（dsh-update-checker），避免离线环境下自更新影响稳定；后续如需在线升级，可联系管理员更新安装包。
-3. **不含 API Key**：安装包不含任何密钥，每位同事首次使用时自行填写。
+1. **完全离线可用**：安装包已内置 Node.js 及全部依赖，用户无需安装 Node.js、无需联网拉取任何依赖。
+2. **可自行更新**：安装包内置「自动更新检查」插件（dsh-update-checker），联网时可自行检查并一键更新 DSH 与插件版本。
+3. **不含 API Key**：安装包不含任何密钥，每位用户首次使用时自行填写。
 4. 联网相关功能（网页搜索、插件市场安装新插件、费用价格同步）在有网络时才生效；离线时核心对话与办公文档功能不受影响。
 5. **升级不丢数据**：覆盖安装新版本时插件会自动更新，而你的界面设置、历史会话和 API Key 都会保留。
 
