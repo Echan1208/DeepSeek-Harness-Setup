@@ -15,7 +15,7 @@
 
 | 文件 | 大小 | 说明 |
 | --- | --- | --- |
-| [DeepSeekHarness-Setup-0.1.5-rc.1-r3.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.1-r3.exe) | 约 181 MB | 最新版安装包 |
+| [DeepSeekHarness-Setup-0.1.5-rc.1-r3.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.1-r3.exe) | 约 169 MB | 最新版安装包 |
 
 > 历史版本见 [Releases](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases) 页面。
 
