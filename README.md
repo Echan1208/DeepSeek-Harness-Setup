@@ -1,3 +1,5 @@
+> 语言 / Language：[English](./README.en.md) | **简体中文**
+
 # DeepSeek Harness 安装包（Windows 离线版）
 
 一键安装 DeepSeek Harness，内置 Node.js 与全部插件、依赖、技能，**完全离线可用**——同事无需安装 Node.js、无需联网拉取任何依赖。
