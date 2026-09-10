@@ -76,12 +76,25 @@
 
 ## 说明
 
-1. **完全离线可用**：安装包已内置 Node.js 及全部依赖，同无需安装 Node.js、无需联网拉取任何依赖。
-2. **已禁用自动更新**：安装包中移除了「自动更新检查」插件（dsh-update-checker），避免离线环境下自更新影响稳定；后续如需在线升级，可联系我更新安装包，我也会尽快上传更新包。
-3. **不含 API Key**：安装包不含任何密钥，首次使用时自行填写。
+1. **完全离线可用**：安装包已内置 Node.js 及全部依赖，同事无需安装 Node.js、无需联网拉取任何依赖。
+2. **已禁用自动更新**：安装包中移除了「自动更新检查」插件（dsh-update-checker），避免离线环境下自更新影响稳定；后续如需在线升级，可联系管理员更新安装包。
+3. **不含 API Key**：安装包不含任何密钥，每位同事首次使用时自行填写。
 4. 联网相关功能（网页搜索、插件市场安装新插件、费用价格同步）在有网络时才生效；离线时核心对话与办公文档功能不受影响。
 
-## 做这款安装包的用途
+## 开源来源与致谢
 
-1. 身边太多使用命令安装DeepSeek Harness的时候都会遇到卡在npm安装或者是网络问题上
-2. 安装包自带办公工具和技能，方便直接上手使用
+本安装包集成的插件均来自 GitHub 上的开源创作者，特此列出原始仓库并致谢：
+
+| 插件 / 技能 | 开源仓库 |
+| --- | --- |
+| DeepSeek Harness（核心本体） | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) |
+| dshmarket | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) |
+| dsh-find-plugin | [awesome-dsh-plugin/dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin) |
+| dsh-better-sidebar | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) |
+| dsh-univer-office（含 univer 系列技能） | [dream-num/dsh-univer-office](https://github.com/dream-num/dsh-univer-office) |
+| dsh-cost-meter | [Han-1413141/dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) |
+| @liustack/modsearch | [liustack/modsearch](https://github.com/liustack/modsearch) |
+| ppt-master（技能） | [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master) |
+| dsh-update-checker（本包已禁用） | [Airmetro/dsh-update-checker](https://github.com/Airmetro/dsh-update-checker) |
+
+> 本仓库仅做离线打包与分发，便于内网 / 受限网络环境一键安装；各插件版权归原作者所有，请遵守各仓库的开源协议（多数为 MIT）。
