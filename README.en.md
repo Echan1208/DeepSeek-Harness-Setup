@@ -88,6 +88,7 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 2. **Auto-update disabled**: the update-checker plugin (dsh-update-checker) is removed to keep the frozen install stable offline; contact the admin for a newer installer.
 3. **No API key included**: each user enters their own key on first use.
 4. Network features (web search, installing new plugins, price sync) only work with network; core chat and office features work offline.
+5. **Upgrades keep your data**: re-running a newer installer refreshes the plugins while keeping your UI settings, session history and API key.
 
 ## Open-Source Credits
 
