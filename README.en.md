@@ -15,7 +15,7 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 
 | File | Size | Notes |
 | --- | --- | --- |
-| [DeepSeekHarness-Setup-0.1.5-rc.1-r3.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.1-r3.exe) | ~181 MB | Latest installer |
+| [DeepSeekHarness-Setup-0.1.5-rc.1-r3.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.1-r3.exe) | ~169 MB | Latest installer |
 
 > See [Releases](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases) for older versions.
 
