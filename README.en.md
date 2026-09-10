@@ -4,13 +4,19 @@
 
 One-click installer for DeepSeek Harness with Node.js and all plugins, dependencies and skills bundled in — **fully offline**. No Node.js installation, no network required.
 
-> Version: **0.1.5-alpha.1** ｜ Bundled Node.js **v24.20.0** ｜ 64-bit Windows 10 / 11
+> Version: **0.1.5-rc.1** ｜ Bundled Node.js **v24.20.0** ｜ 64-bit Windows 10 / 11
+
+## Highlights
+
+- **The chat UI now supports the DeepSeek V4.1 model** (`deepseek-flash` / DeepSeek-V41-Flash): enabled by default, with text + image input and a 1M-token context window.
+- DSH core upgraded to **0.1.5-rc.1**; `dsh-cost-meter` upgraded to **1.7.19**.
+
 
 ## Download
 
 | File | Size | Notes |
 | --- | --- | --- |
-| [DeepSeekHarness-Setup-0.1.5-alpha.1.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-alpha.1.exe) | ~181 MB | Latest installer |
+| [DeepSeekHarness-Setup-0.1.5-rc.1.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.1.exe) | ~181 MB | Latest installer |
 
 > See [Releases](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases) for older versions.
 
@@ -23,7 +29,7 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 - Disk space: ~1 GB
 
 ### Install Steps
-1. Download and double-click `DeepSeekHarness-Setup-0.1.5-alpha.1.exe`
+1. Download and double-click `DeepSeekHarness-Setup-0.1.5-rc.1.exe`
 2. Choose an install location (default `%LOCALAPPDATA%\Programs\DeepSeekHarness`, **no administrator rights required**)
 3. Click "Install" and wait for it to finish
 4. A "DeepSeek Harness" shortcut is created on the desktop and in the Start menu
@@ -44,8 +50,8 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 ### Core & UI
 | Plugin | Version | Purpose |
 | --- | --- | --- |
-| @deepseek-ai/dsh-base | 0.1.5-alpha.1 | Core runtime: agent, tools, sessions, subagents, goals, workflow orchestration |
-| @deepseek-ai/dsh-web-app | 0.1.5-alpha.1 | The web GUI itself |
+| @deepseek-ai/dsh-base | 0.1.5-rc.1 | Core runtime: agent, tools, sessions, subagents, goals, workflow orchestration |
+| @deepseek-ai/dsh-web-app | 0.1.5-rc.1 | The web GUI itself |
 
 ### Office (Univer suite)
 | Plugin / Skill | Version | Purpose |
@@ -74,7 +80,7 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 | Plugin | Version | Purpose |
 | --- | --- | --- |
 | dsh-better-sidebar | 0.18.1 | VSCode-like right sidebar: explorer / editor / terminal / Git / browser, isolated per session |
-| dsh-cost-meter | 1.7.17 | Session cost tracking: per-session & daily cost, history, official price sync, 90+ model pricing |
+| dsh-cost-meter | 1.7.19 | Session cost tracking: per-session & daily cost, history, official price sync, 90+ model pricing |
 
 ## Notes
 
