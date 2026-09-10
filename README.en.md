@@ -103,6 +103,6 @@ All bundled plugins come from open-source creators on GitHub — credit and link
 | dsh-cost-meter | [Han-1413141/dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) |
 | @liustack/modsearch | [liustack/modsearch](https://github.com/liustack/modsearch) |
 | ppt-master (skill) | [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master) |
-| dsh-update-checker (disabled) | [Airmetro/dsh-update-checker](https://github.com/Airmetro/dsh-update-checker) |
+| dsh-update-checker | [Airmetro/dsh-update-checker](https://github.com/Airmetro/dsh-update-checker) |
 
 > This repo only repackages for offline distribution (for intranet / restricted networks). Plugins remain the property of their authors; please respect each repository's license (mostly MIT).
