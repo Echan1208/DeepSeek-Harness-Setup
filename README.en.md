@@ -4,19 +4,18 @@
 
 One-click installer for DeepSeek Harness with Node.js and all plugins, dependencies and skills bundled in — **fully offline**. No Node.js installation, no network required.
 
-> Version: **0.1.5-rc.1** ｜ Bundled Node.js **v24.20.0** ｜ 64-bit Windows 10 / 11
+> Version: **0.1.5-rc.1-r2** ｜ Bundled Node.js **v24.20.0** ｜ 64-bit Windows 10 / 11
 
 ## Highlights
 
 - **The chat UI now supports the DeepSeek V4.1 model** (`deepseek-flash` / DeepSeek-V41-Flash): enabled by default, with text + image input and a 1M-token context window.
-- DSH core upgraded to **0.1.5-rc.1**; `dsh-cost-meter` upgraded to **1.7.19**.
-
+- **User data now lives outside the install directory**: sessions, API key and UI settings are stored in `%LOCALAPPDATA%\DeepSeekHarness`, so **changing the install location or reinstalling loses nothing**.
 
 ## Download
 
 | File | Size | Notes |
 | --- | --- | --- |
-| [DeepSeekHarness-Setup-0.1.5-rc.1.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.1.exe) | ~181 MB | Latest installer |
+| [DeepSeekHarness-Setup-0.1.5-rc.1-r2.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.1-r2.exe) | ~181 MB | Latest installer |
 
 > See [Releases](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases) for older versions.
 
@@ -26,24 +25,24 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 - OS: 64-bit Windows 10 / Windows 11
 - Browser: Microsoft Edge or Google Chrome (to open the GUI; Win10/11 ship with Edge)
 - No Node.js needed, no network needed (runtime and all dependencies are bundled)
-- Disk space: ~1 GB
+- Disk space: ~1.7 GB (install dir ~1 GB + user data ~0.7 GB)
 
 ### Install Steps
-1. Download and double-click `DeepSeekHarness-Setup-0.1.5-rc.1.exe`
+1. Download and double-click `DeepSeekHarness-Setup-0.1.5-rc.1-r2.exe`
 2. Choose an install location (default `%LOCALAPPDATA%\Programs\DeepSeekHarness`, **no administrator rights required**)
 3. Click "Install" and wait for it to finish
 4. A "DeepSeek Harness" shortcut is created on the desktop and in the Start menu
 
 ### First Use
 1. Double-click the "DeepSeek Harness" desktop shortcut
-2. The first launch takes 30–60 seconds to initialize (it provisions plugin dependencies locally; later launches are faster)
+2. The first launch takes 1–2 minutes to initialize (it copies the plugin dependencies into your user data directory; later launches are fast)
 3. Enter your own DeepSeek API Key in the UI — the installer contains **no keys**; each user uses their own
 4. You're ready to go
 
 ### Uninstall
 - Option 1: Settings → Apps → DeepSeek Harness → Uninstall
 - Option 2: Run `uninstall.exe` in the install directory
-- Uninstall **keeps your API key, settings and sessions** (the `home` folder); they remain after reinstall. To remove everything, delete the whole install directory manually.
+- Uninstall asks whether to delete your user data too; choose "No" to **keep your API key, settings and sessions** (stored in `%LOCALAPPDATA%\DeepSeekHarness`) so a reinstall continues where you left off.
 
 ## Included Plugins
 
