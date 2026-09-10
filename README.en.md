@@ -78,7 +78,7 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 ### Enhancements & Stats
 | Plugin | Version | Purpose |
 | --- | --- | --- |
-| dsh-better-sidebar | 0.18.1 | VSCode-like right sidebar: explorer / editor / terminal / Git / browser, isolated per session |
+| dsh-better-sidebar | 0.19.0 | VSCode-like right sidebar: explorer / editor / terminal / Git / browser, isolated per session |
 | dsh-cost-meter | 1.7.19 | Session cost tracking: per-session & daily cost, history, official price sync, 90+ model pricing |
 
 ## Notes
