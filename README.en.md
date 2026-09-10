@@ -4,7 +4,7 @@
 
 One-click installer for DeepSeek Harness with Node.js and all plugins, dependencies and skills bundled in — **fully offline**. No Node.js installation, no network required.
 
-> Version: **0.1.5-rc.1-r2** ｜ Bundled Node.js **v24.20.0** ｜ 64-bit Windows 10 / 11
+> Version: **0.1.5-rc.1-r3** ｜ Bundled Node.js **v24.20.0** ｜ 64-bit Windows 10 / 11
 
 ## Highlights
 
@@ -15,7 +15,7 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 
 | File | Size | Notes |
 | --- | --- | --- |
-| [DeepSeekHarness-Setup-0.1.5-rc.1-r2.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.1-r2.exe) | ~181 MB | Latest installer |
+| [DeepSeekHarness-Setup-0.1.5-rc.1-r3.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.1-r3.exe) | ~181 MB | Latest installer |
 
 > See [Releases](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases) for older versions.
 
@@ -28,7 +28,7 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 - Disk space: ~1.7 GB (install dir ~1 GB + user data ~0.7 GB)
 
 ### Install Steps
-1. Download and double-click `DeepSeekHarness-Setup-0.1.5-rc.1-r2.exe`
+1. Download and double-click `DeepSeekHarness-Setup-0.1.5-rc.1-r3.exe`
 2. Choose an install location (default `%LOCALAPPDATA%\Programs\DeepSeekHarness`, **no administrator rights required**)
 3. Click "Install" and wait for it to finish
 4. A "DeepSeek Harness" shortcut is created on the desktop and in the Start menu
@@ -84,7 +84,7 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 ## Notes
 
 1. **Fully offline**: Node.js and all dependencies are bundled; no Node.js install or network needed.
-2. **Auto-update disabled**: the update-checker plugin (dsh-update-checker) is removed to keep the frozen install stable offline; contact the admin for a newer installer.
+2. **Self-update available**: the built-in update-checker plugin (dsh-update-checker) lets you check for and one-click update DSH and its plugins when online.
 3. **No API key included**: each user enters their own key on first use.
 4. Network features (web search, installing new plugins, price sync) only work with network; core chat and office features work offline.
 5. **Upgrades keep your data**: re-running a newer installer refreshes the plugins while keeping your UI settings, session history and API key.
