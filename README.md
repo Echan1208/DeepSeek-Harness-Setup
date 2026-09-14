@@ -22,7 +22,7 @@
 ## 安装说明
 
 ### 系统要求
-- 操作系统：64 位 Windows 10 / Windows 11
+- 操作系统：64 位 Windows 10 / Windows 11 x86/arm
 - 浏览器：Microsoft Edge 或 Google Chrome（用于打开图形界面，Win10/11 自带 Edge）
 - 无需安装 Node.js、无需联网（运行时和全部依赖已内置）
 - 磁盘空间：约 1.7 GB（安装目录约 1 GB + 用户数据约 0.7 GB）
