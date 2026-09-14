@@ -16,7 +16,7 @@
 | 文件 | 大小 | 平台 | 说明 |
 | --- | --- | --- | --- |
 | [DeepSeekHarness-Setup-0.1.5-rc.2.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.2.exe) | 约 170 MB | Windows | 最新版安装包 |
-| [DeepSeek-Harness-0.1.5-rc.2-macOS.pkg](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeek-Harness-0.1.5-rc.2-macOS.pkg) | 约 247 MB | macOS（Apple Silicon） | 最新版安装包 |
+| [DeepSeek-Harness-Setup-0.1.5-rc.2-macOS.pkg](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeek-Harness-Setup-0.1.5-rc.2-macOS.pkg) | 约 247 MB | macOS（Apple Silicon） | 最新版安装包 |
 
 > 历史版本见 [Releases](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases) 页面。
 
@@ -43,10 +43,10 @@
 4. 安装完成后，桌面和开始菜单会自动生成「DeepSeek Harness」快捷方式
 
 ### 安装步骤（macOS）
-1. 下载 `DeepSeek-Harness-0.1.5-rc.2-macOS.pkg`
+1. 下载 `DeepSeek-Harness-Setup-0.1.5-rc.2-macOS.pkg`
 2. 双击安装包，或在终端执行：
    ```bash
-   sudo installer -pkg DeepSeek-Harness-0.1.5-rc.2-macOS.pkg -target /
+   sudo installer -pkg DeepSeek-Harness-Setup-0.1.5-rc.2-macOS.pkg -target /
    ```
 3. 安装完成后，从「启动台」或「应用程序」打开 **DeepSeek Harness**，并在程序坞中保留它的图标
 4. 界面由应用自身的窗口呈现，**不需要另外安装或打开 Chrome**；关闭窗口即停止服务，再次点击程序坞图标即可重新启动
@@ -65,13 +65,31 @@
 - 卸载时会询问是否同时删除用户数据；选择「否」则**保留 API Key、设置和会话记录**（存放在 `%LOCALAPPDATA%\DeepSeekHarness`），重装后仍可继续使用
 
 ### 卸载（macOS）
+
+**方式一：图形界面（简单）**
+1. 打开「访达」→「应用程序」，把 **DeepSeek Harness** 拖入废纸篓（或右键 →「移到废纸篓」）
+2. 这样应用即被移除；**服务本体与插件仍保留在 `/usr/local/lib/deepseek-harness`**，个人数据保留在 `~/.dsh`
+3. 如需一并清理残留，按「方式二」执行命令
+
+**方式二：终端命令（彻底）**
 ```bash
-rm -rf /usr/local/lib/deepseek-harness
-rm -f /usr/local/bin/dsh /usr/local/bin/pnpm
+# 移除应用
 rm -rf "/Applications/DeepSeek Harness.app"
-rm -f ~/.dsh/profiles        # 仅为符号链接
-rm -rf ~/.dsh                # 可选：连同会话与个人数据一起删除
+
+# 移除服务本体、内置运行时与全部插件
+rm -rf /usr/local/lib/deepseek-harness
+
+# 移除命令行入口
+rm -f /usr/local/bin/dsh /usr/local/bin/pnpm
+
+# 移除用户目录下的 profile 链接（仅为符号链接，删除不影响系统）
+rm -f ~/.dsh/profiles
+
+# 可选：连同会话记录、API Key、界面设置一起删除
+rm -rf ~/.dsh
 ```
+
+> 若此前覆盖安装过旧版本，`/usr/local/lib/node_modules/@deepseek-ai/` 下可能留有被自动备份的旧 CLI（形如 `dsh.pre-pkg-<时间戳>`），可一并删除。
 
 ## 包含的插件及用途
 

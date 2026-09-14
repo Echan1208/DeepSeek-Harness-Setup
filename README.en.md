@@ -16,7 +16,7 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 | File | Size | Platform | Notes |
 | --- | --- | --- | --- |
 | [DeepSeekHarness-Setup-0.1.5-rc.2.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.2.exe) | ~170 MB | Windows | Latest installer |
-| [DeepSeek-Harness-0.1.5-rc.2-macOS.pkg](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeek-Harness-0.1.5-rc.2-macOS.pkg) | ~247 MB | macOS (Apple Silicon) | Latest installer |
+| [DeepSeek-Harness-Setup-0.1.5-rc.2-macOS.pkg](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeek-Harness-Setup-0.1.5-rc.2-macOS.pkg) | ~247 MB | macOS (Apple Silicon) | Latest installer |
 
 > See [Releases](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases) for older versions.
 
@@ -43,10 +43,10 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 4. A "DeepSeek Harness" shortcut is created on the desktop and in the Start menu
 
 ### Install Steps (macOS)
-1. Download `DeepSeek-Harness-0.1.5-rc.2-macOS.pkg`
+1. Download `DeepSeek-Harness-Setup-0.1.5-rc.2-macOS.pkg`
 2. Double-click it, or run:
    ```bash
-   sudo installer -pkg DeepSeek-Harness-0.1.5-rc.2-macOS.pkg -target /
+   sudo installer -pkg DeepSeek-Harness-Setup-0.1.5-rc.2-macOS.pkg -target /
    ```
 3. Open **DeepSeek Harness** from Launchpad or Applications and keep its icon in the Dock
 4. The GUI is rendered by the app's own window — **no separate Chrome install or launch is needed**. Closing the window stops the service; clicking the Dock icon starts it again
