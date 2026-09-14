@@ -22,7 +22,7 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 ## Installation
 
 ### System Requirements
-- OS: 64-bit Windows 10 / Windows 11
+- OS: 64-bit Windows 10 / Windows 11 x86/arm
 - Browser: Microsoft Edge or Google Chrome (to open the GUI; Win10/11 ship with Edge)
 - No Node.js needed, no network needed (runtime and all dependencies are bundled)
 - Disk space: ~1.7 GB (install dir ~1 GB + user data ~0.7 GB)
