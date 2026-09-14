@@ -1,8 +1,8 @@
 > Language / 语言：**English** | [简体中文](./README.md)
 
-# DeepSeek Harness Installer (Windows, Offline)
+# DeepSeek Harness Installer (Offline Edition)
 
-One-click installer for DeepSeek Harness with Node.js and all plugins, dependencies and skills bundled in — **fully offline**. No Node.js installation, no network required.
+One-click installer for DeepSeek Harness with Node.js and all plugins, dependencies and skills bundled in — **fully offline**. No Node.js installation, no network required. Intended for users on **restricted networks who cannot install DeepSeek Harness through a terminal**.
 
 > Version: **0.1.5-rc.2** ｜ Bundled Node.js **v24.20.0** ｜ 64-bit Windows 10 / 11
 
@@ -22,7 +22,7 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 ## Installation
 
 ### System Requirements
-- OS: 64-bit Windows 10 / Windows 11 x86/arm
+- OS: 64-bit Windows 10 / Windows 11
 - Browser: Microsoft Edge or Google Chrome (to open the GUI; Win10/11 ship with Edge)
 - No Node.js needed, no network needed (runtime and all dependencies are bundled)
 - Disk space: ~1.7 GB (install dir ~1 GB + user data ~0.7 GB)
