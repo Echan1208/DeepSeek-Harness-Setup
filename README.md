@@ -4,7 +4,7 @@
 
 一键安装 DeepSeek Harness，内置 Node.js 与全部插件、依赖、技能，**完全离线可用**——用户无需安装 Node.js、无需联网拉取任何依赖。适用于**网络受限、无法通过终端正常安装 DeepSeek Harness** 的用户。
 
-> 版本：**0.1.5-rc.2** ｜ 内置 Node.js **v24.20.0** ｜ 适用 64 位 Windows 10 / 11
+> 版本：**0.1.5-rc.2** ｜ 内置 Node.js **v24.20.0** ｜ 适用 64 位 Windows 10 / 11（x86 / arm）
 
 ## 本版亮点
 
@@ -22,7 +22,7 @@
 ## 安装说明
 
 ### 系统要求
-- 操作系统：64 位 Windows 10 / Windows 11
+- 操作系统：64 位 Windows 10 / Windows 11（x86 / arm）
 - 浏览器：Microsoft Edge 或 Google Chrome（用于打开图形界面，Win10/11 自带 Edge）
 - 无需安装 Node.js、无需联网（运行时和全部依赖已内置）
 - 磁盘空间：约 1.7 GB（安装目录约 1 GB + 用户数据约 0.7 GB）
