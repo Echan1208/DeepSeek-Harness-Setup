@@ -4,7 +4,7 @@
 
 One-click installer for DeepSeek Harness with Node.js and all plugins, dependencies and skills bundled in — **fully offline**. No Node.js installation, no network required. Intended for users on **restricted networks who cannot install DeepSeek Harness through a terminal**.
 
-> Version: **0.1.5-rc.2** ｜ Bundled Node.js **v24.20.0** ｜ 64-bit Windows 10 / 11 (x64 / ARM64)
+> Version: **0.1.5-rc.2** ｜ Bundled Node.js **v24.20.0** ｜ 64-bit Windows 10 / 11 (x64 / ARM64) and **macOS (Apple Silicon)**
 
 ## Highlights
 
@@ -13,25 +13,43 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 
 ## Download
 
-| File | Size | Notes |
-| --- | --- | --- |
-| [DeepSeekHarness-Setup-0.1.5-rc.2.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.2.exe) | ~170 MB | Latest installer |
+| File | Size | Platform | Notes |
+| --- | --- | --- | --- |
+| [DeepSeekHarness-Setup-0.1.5-rc.2.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.2.exe) | ~170 MB | Windows | Latest installer |
+| [DeepSeek-Harness-0.1.5-rc.2-macOS.pkg](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeek-Harness-0.1.5-rc.2-macOS.pkg) | ~247 MB | macOS (Apple Silicon) | Latest installer |
 
 > See [Releases](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases) for older versions.
 
 ## Installation
 
 ### System Requirements
+
+**Windows**
 - OS: 64-bit Windows 10 / Windows 11 (x64 / ARM64)
 - Browser: Microsoft Edge or Google Chrome (to open the GUI; Win10/11 ship with Edge)
 - No Node.js needed, no network needed (runtime and all dependencies are bundled)
 - Disk space: ~1.7 GB (install dir ~1 GB + user data ~0.7 GB)
 
-### Install Steps
+**macOS (Apple Silicon)**
+- OS: **macOS 14 or later, Apple Silicon (M-series) only** — Intel Macs are not supported
+- No Node.js needed, no network needed (runtime and all dependencies are bundled)
+- Disk space: ~1.2 GB (install dir `/usr/local/lib/deepseek-harness` ~1.1 GB + user data ~0.1 GB)
+- Administrator rights are required to install (writes to `/usr/local` and `/Applications`)
+
+### Install Steps (Windows)
 1. Download and double-click `DeepSeekHarness-Setup-0.1.5-rc.2.exe`
 2. Choose an install location (default `%LOCALAPPDATA%\Programs\DeepSeekHarness`, **no administrator rights required**)
 3. Click "Install" and wait for it to finish
 4. A "DeepSeek Harness" shortcut is created on the desktop and in the Start menu
+
+### Install Steps (macOS)
+1. Download `DeepSeek-Harness-0.1.5-rc.2-macOS.pkg`
+2. Double-click it, or run:
+   ```bash
+   sudo installer -pkg DeepSeek-Harness-0.1.5-rc.2-macOS.pkg -target /
+   ```
+3. Open **DeepSeek Harness** from Launchpad or Applications and keep its icon in the Dock
+4. The GUI is rendered by the app's own window — **no separate Chrome install or launch is needed**. Closing the window stops the service; clicking the Dock icon starts it again
 
 ### First Use
 1. Double-click the "DeepSeek Harness" desktop shortcut

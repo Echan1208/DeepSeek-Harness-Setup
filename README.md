@@ -4,7 +4,7 @@
 
 一键安装 DeepSeek Harness，内置 Node.js 与全部插件、依赖、技能，**完全离线可用**——用户无需安装 Node.js、无需联网拉取任何依赖。适用于**网络受限、无法通过终端正常安装 DeepSeek Harness** 的用户。
 
-> 版本：**0.1.5-rc.2** ｜ 内置 Node.js **v24.20.0** ｜ 适用 64 位 Windows 10 / 11（x64 / ARM64）
+> 版本：**0.1.5-rc.2** ｜ 内置 Node.js **v24.20.0** ｜ 适用 64 位 Windows 10 / 11（x64 / ARM64）、**macOS（Apple Silicon）**
 
 ## 本版亮点
 
@@ -13,25 +13,43 @@
 
 ## 下载
 
-| 文件 | 大小 | 说明 |
-| --- | --- | --- |
-| [DeepSeekHarness-Setup-0.1.5-rc.2.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.2.exe) | 约 170 MB | 最新版安装包 |
+| 文件 | 大小 | 平台 | 说明 |
+| --- | --- | --- | --- |
+| [DeepSeekHarness-Setup-0.1.5-rc.2.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.2.exe) | 约 170 MB | Windows | 最新版安装包 |
+| [DeepSeek-Harness-0.1.5-rc.2-macOS.pkg](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeek-Harness-0.1.5-rc.2-macOS.pkg) | 约 247 MB | macOS（Apple Silicon） | 最新版安装包 |
 
 > 历史版本见 [Releases](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases) 页面。
 
 ## 安装说明
 
 ### 系统要求
+
+**Windows**
 - 操作系统：64 位 Windows 10 / Windows 11（x64 / ARM64）
 - 浏览器：Microsoft Edge 或 Google Chrome（用于打开图形界面，Win10/11 自带 Edge）
 - 无需安装 Node.js、无需联网（运行时和全部依赖已内置）
 - 磁盘空间：约 1.7 GB（安装目录约 1 GB + 用户数据约 0.7 GB）
 
-### 安装步骤
+**macOS（Apple Silicon）**
+- 操作系统：**macOS 14 及以上，仅支持 Apple Silicon（M 系列芯片）**；Intel Mac 暂不支持
+- 无需安装 Node.js、无需联网（运行时和全部依赖已内置）
+- 磁盘空间：约 1.2 GB（安装目录 `/usr/local/lib/deepseek-harness` 约 1.1 GB + 用户数据约 0.1 GB）
+- 需管理员权限安装（写入 `/usr/local` 与 `/Applications`）
+
+### 安装步骤（Windows）
 1. 下载并双击 `DeepSeekHarness-Setup-0.1.5-rc.2.exe`
 2. 选择安装位置（默认 `%LOCALAPPDATA%\Programs\DeepSeekHarness`，全程**无需管理员权限**）
 3. 点击「安装」，等待进度条完成
 4. 安装完成后，桌面和开始菜单会自动生成「DeepSeek Harness」快捷方式
+
+### 安装步骤（macOS）
+1. 下载 `DeepSeek-Harness-0.1.5-rc.2-macOS.pkg`
+2. 双击安装包，或在终端执行：
+   ```bash
+   sudo installer -pkg DeepSeek-Harness-0.1.5-rc.2-macOS.pkg -target /
+   ```
+3. 安装完成后，从「启动台」或「应用程序」打开 **DeepSeek Harness**，并在程序坞中保留它的图标
+4. 界面由应用自身的窗口呈现，**不需要另外安装或打开 Chrome**；关闭窗口即停止服务，再次点击程序坞图标即可重新启动
 
 ### 首次使用
 1. 双击桌面上的「DeepSeek Harness」快捷方式
@@ -39,10 +57,21 @@
 3. 在界面中填入你自己的 DeepSeek API Key —— 安装包**不含任何密钥**，每位用户需使用自己的 Key
 4. 填入后即可开始使用
 
-### 卸载
+> macOS 用户数据位置：会话、API Key、设置存放于 `~/.dsh`（与 Windows 的 `%LOCALAPPDATA%\DeepSeekHarness` 对应）。
+
+### 卸载（Windows）
 - 路径一：设置 → 应用 → DeepSeek Harness → 卸载
 - 路径二：运行安装目录下的 `uninstall.exe`
 - 卸载时会询问是否同时删除用户数据；选择「否」则**保留 API Key、设置和会话记录**（存放在 `%LOCALAPPDATA%\DeepSeekHarness`），重装后仍可继续使用
+
+### 卸载（macOS）
+```bash
+rm -rf /usr/local/lib/deepseek-harness
+rm -f /usr/local/bin/dsh /usr/local/bin/pnpm
+rm -rf "/Applications/DeepSeek Harness.app"
+rm -f ~/.dsh/profiles        # 仅为符号链接
+rm -rf ~/.dsh                # 可选：连同会话与个人数据一起删除
+```
 
 ## 包含的插件及用途
 
