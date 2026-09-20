@@ -10,6 +10,7 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 
 - **The chat UI now supports the DeepSeek V4.1 model** (`deepseek-flash` / DeepSeek-V41-Flash): enabled by default, with text + image input and a 1M-token context window.
 - **User data now lives outside the install directory**: sessions, API key and UI settings are stored in `%LOCALAPPDATA%\DeepSeekHarness`, so **changing the install location or reinstalling loses nothing**.
+- **Fixed: browser auto-translate broke typing in the chat box (Windows)** — the UI now declares itself non-translatable, so Chrome / Edge no longer translate the page or interfere with typing.
 
 ## Download
 
@@ -73,7 +74,7 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 ### Office (Univer suite)
 | Plugin / Skill | Version | Purpose |
 | --- | --- | --- |
-| dsh-univer-office | 0.2.14 | Embedded Univer office engine: spreadsheet / document / slide / database / board editing, inline preview, floating windows, import & export |
+| dsh-univer-office | 0.3.2 | Embedded Univer office engine: spreadsheet / document / slide / database / board editing, inline preview, floating windows, import & export |
 | · univer-sheet | — | Spreadsheet (Excel-like): read/write, formulas, charts; .xlsx / .csv import/export |
 | · univer-doc | — | Document (Word-like): editing, layout, pagination; .docx import/export |
 | · univer-slide | — | Slides (PPT-like): generate, edit, layout; .pptx import/export |
@@ -85,19 +86,19 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 ### Search & Information
 | Plugin | Version | Purpose |
 | --- | --- | --- |
-| @liustack/modsearch | 5.10.2 | Web search: web search, X (Twitter) post search, page fetching (no signup / no key) |
+| @liustack/modsearch | 5.10.3 | Web search: web search, X (Twitter) post search, page fetching (no signup / no key) |
 
 ### Plugin Management
 | Plugin | Version | Purpose |
 | --- | --- | --- |
-| dshmarket | 1.46.1 | Visual plugin marketplace: browse, search and one-click install community plugins (needs network) |
+| dshmarket | 1.50.0 | Visual plugin marketplace: browse, search and one-click install community plugins (needs network) |
 | dsh-find-plugin | 0.3.7 | Search DSH plugins on GitHub from inside the agent (star-ranked, needs network) |
 
 ### Enhancements & Stats
 | Plugin | Version | Purpose |
 | --- | --- | --- |
 | dsh-better-sidebar | 0.19.1 | VSCode-like right sidebar: explorer / editor / terminal / Git / browser, isolated per session |
-| dsh-cost-meter | 1.7.22 | Session cost tracking: per-session & daily cost, history, official price sync, 90+ model pricing |
+| dsh-cost-meter | 1.7.30 | Session cost tracking: per-session & daily cost, history, official price sync, 90+ model pricing |
 
 ## Notes
 
