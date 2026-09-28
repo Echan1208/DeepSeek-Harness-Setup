@@ -4,10 +4,11 @@
 
 One-click installer for DeepSeek Harness with Node.js and all plugins, dependencies and skills bundled in — **fully offline**. No Node.js installation, no network required. Intended for users on **restricted networks who cannot install DeepSeek Harness through a terminal**.
 
-> Version: **0.1.5-rc.2** ｜ Bundled Node.js **v24.20.0** ｜ 64-bit Windows 10 / 11 (x64 / ARM64) and **macOS (Apple Silicon)**
+> Version: **0.1.7-rc.2** ｜ Bundled Node.js **v24.20.0** ｜ 64-bit Windows 10 / 11 (x64 / ARM64)
 
 ## Highlights
 
+- **DSH and all plugins updated to the latest versions**: DSH core **0.1.7-rc.2**, with all 7 plugins refreshed (dshmarket 1.66.3, dsh-better-sidebar 0.22.1, dsh-cost-meter 1.7.40, dsh-univer-office 0.3.5, dsh-find-plugin 0.4.0, @liustack/modsearch 5.10.5, dsh-update-checker 1.6.4).
 - **The chat UI now supports the DeepSeek V4.1 model** (`deepseek-flash` / DeepSeek-V41-Flash): enabled by default, with text + image input and a 1M-token context window.
 - **User data now lives outside the install directory**: sessions, API key and UI settings are stored in `%LOCALAPPDATA%\DeepSeekHarness`, so **changing the install location or reinstalling loses nothing**.
 - **Fixed: browser auto-translate broke typing in the chat box (Windows)** — the UI now declares itself non-translatable, so Chrome / Edge no longer translate the page or interfere with typing.
@@ -16,8 +17,7 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 
 | File | Size | Platform | Notes |
 | --- | --- | --- | --- |
-| [DeepSeekHarness-Setup-0.1.5-rc.2.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.5-rc.2.exe) | ~170 MB | Windows | Latest installer |
-| [DeepSeek-Harness-Setup-0.1.5-rc.2-macOS.pkg](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeek-Harness-Setup-0.1.5-rc.2-macOS.pkg) | ~247 MB | macOS (Apple Silicon) | Latest installer |
+| [DeepSeekHarness-Setup-0.1.7-rc.2.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.7-rc.2.exe) | ~228 MB | Windows | Latest installer |
 
 > See [Releases](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases) for older versions.
 
@@ -29,28 +29,13 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 - OS: 64-bit Windows 10 / Windows 11 (x64 / ARM64)
 - Browser: Microsoft Edge or Google Chrome (to open the GUI; Win10/11 ship with Edge)
 - No Node.js needed, no network needed (runtime and all dependencies are bundled)
-- Disk space: ~1.7 GB (install dir ~1 GB + user data ~0.7 GB)
-
-**macOS (Apple Silicon)**
-- OS: **macOS 14 or later, Apple Silicon (M-series) only** — Intel Macs are not supported
-- No Node.js needed, no network needed (runtime and all dependencies are bundled)
-- Disk space: ~1.2 GB (install dir `/usr/local/lib/deepseek-harness` ~1.1 GB + user data ~0.1 GB)
-- Administrator rights are required to install (writes to `/usr/local` and `/Applications`)
+- Disk space: ~1.8 GB (install dir ~1.1 GB + user data ~0.7 GB)
 
 ### Install Steps (Windows)
-1. Download and double-click `DeepSeekHarness-Setup-0.1.5-rc.2.exe`
+1. Download and double-click `DeepSeekHarness-Setup-0.1.7-rc.2.exe`
 2. Choose an install location (default `%LOCALAPPDATA%\Programs\DeepSeekHarness`, **no administrator rights required**)
 3. Click "Install" and wait for it to finish
 4. A "DeepSeek Harness" shortcut is created on the desktop and in the Start menu
-
-### Install Steps (macOS)
-1. Download `DeepSeek-Harness-Setup-0.1.5-rc.2-macOS.pkg`
-2. Double-click it, or run:
-   ```bash
-   sudo installer -pkg DeepSeek-Harness-Setup-0.1.5-rc.2-macOS.pkg -target /
-   ```
-3. Open **DeepSeek Harness** from Launchpad or Applications and keep its icon in the Dock
-4. The GUI is rendered by the app's own window — **no separate Chrome install or launch is needed**. Closing the window stops the service; clicking the Dock icon starts it again
 
 ### First Use
 1. Double-click the "DeepSeek Harness" desktop shortcut
@@ -68,13 +53,13 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 ### Core & UI
 | Plugin | Version | Purpose |
 | --- | --- | --- |
-| @deepseek-ai/dsh-base | 0.1.5-rc.2 | Core runtime: agent, tools, sessions, subagents, goals, workflow orchestration |
-| @deepseek-ai/dsh-web-app | 0.1.5-rc.2 | The web GUI itself |
+| @deepseek-ai/dsh-base | 0.1.7-rc.2 | Core runtime: agent, tools, sessions, subagents, goals, workflow orchestration |
+| @deepseek-ai/dsh-web-app | 0.1.7-rc.2 | The web GUI itself |
 
 ### Office (Univer suite)
 | Plugin / Skill | Version | Purpose |
 | --- | --- | --- |
-| dsh-univer-office | 0.3.2 | Embedded Univer office engine: spreadsheet / document / slide / database / board editing, inline preview, floating windows, import & export |
+| dsh-univer-office | 0.3.5 | Embedded Univer office engine: spreadsheet / document / slide / database / board editing, inline preview, floating windows, import & export |
 | · univer-sheet | — | Spreadsheet (Excel-like): read/write, formulas, charts; .xlsx / .csv import/export |
 | · univer-doc | — | Document (Word-like): editing, layout, pagination; .docx import/export |
 | · univer-slide | — | Slides (PPT-like): generate, edit, layout; .pptx import/export |
@@ -86,19 +71,19 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 ### Search & Information
 | Plugin | Version | Purpose |
 | --- | --- | --- |
-| @liustack/modsearch | 5.10.3 | Web search: web search, X (Twitter) post search, page fetching (no signup / no key) |
+| @liustack/modsearch | 5.10.5 | Web search: web search, X (Twitter) post search, page fetching (no signup / no key) |
 
 ### Plugin Management
 | Plugin | Version | Purpose |
 | --- | --- | --- |
-| dshmarket | 1.50.0 | Visual plugin marketplace: browse, search and one-click install community plugins (needs network) |
-| dsh-find-plugin | 0.3.7 | Search DSH plugins on GitHub from inside the agent (star-ranked, needs network) |
+| dshmarket | 1.66.3 | Visual plugin marketplace: browse, search and one-click install community plugins (needs network) |
+| dsh-find-plugin | 0.4.0 | Search DSH plugins on GitHub from inside the agent (star-ranked, needs network) |
 
 ### Enhancements & Stats
 | Plugin | Version | Purpose |
 | --- | --- | --- |
-| dsh-better-sidebar | 0.19.1 | VSCode-like right sidebar: explorer / editor / terminal / Git / browser, isolated per session |
-| dsh-cost-meter | 1.7.30 | Session cost tracking: per-session & daily cost, history, official price sync, 90+ model pricing |
+| dsh-better-sidebar | 0.22.1 | VSCode-like right sidebar: explorer / editor / terminal / Git / browser, isolated per session |
+| dsh-cost-meter | 1.7.40 | Session cost tracking: per-session & daily cost, history, official price sync, 90+ model pricing |
 
 ## Notes
 
