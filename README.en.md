@@ -4,11 +4,11 @@
 
 One-click installer for DeepSeek Harness with Node.js and all plugins, dependencies and skills bundled in — **fully offline**. No Node.js installation, no network required. Intended for users on **restricted networks who cannot install DeepSeek Harness through a terminal**.
 
-> Version: **0.1.7-rc.2** ｜ Bundled Node.js **v24.20.0** ｜ 64-bit Windows 10 / 11 (x64 / ARM64)
+> Version: **0.2.0-rc.1** ｜ Bundled Node.js **v24.20.0** ｜ 64-bit Windows 10 / 11 (x64 / ARM64)
 
 ## Highlights
 
-- **DSH and all plugins updated to the latest versions**: DSH core **0.1.7-rc.2**, with all 7 plugins refreshed (dshmarket 1.66.3, dsh-better-sidebar 0.22.1, dsh-cost-meter 1.7.40, dsh-univer-office 0.3.5, dsh-find-plugin 0.4.0, @liustack/modsearch 5.10.5, dsh-update-checker 1.6.4).
+- **DSH and all plugins updated to the latest versions**: DSH core **0.2.0-rc.1**, with all 7 plugins refreshed (dshmarket 1.66.5, dsh-better-sidebar 0.24.1, dsh-cost-meter 1.7.44, dsh-univer-office 0.3.5, dsh-find-plugin 0.4.0, @liustack/modsearch 5.10.5, dsh-update-checker 1.6.4).
 - **The chat UI now supports the DeepSeek V4.1 model** (`deepseek-flash` / DeepSeek-V41-Flash): enabled by default, with text + image input and a 1M-token context window.
 - **User data now lives outside the install directory**: sessions, API key and UI settings are stored in `%LOCALAPPDATA%\DeepSeekHarness`, so **changing the install location or reinstalling loses nothing**.
 - **Fixed: browser auto-translate broke typing in the chat box (Windows)** — the UI now declares itself non-translatable, so Chrome / Edge no longer translate the page or interfere with typing.
@@ -17,7 +17,7 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 
 | File | Size | Platform | Notes |
 | --- | --- | --- | --- |
-| [DeepSeekHarness-Setup-0.1.7-rc.2.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.7-rc.2.exe) | ~228 MB | Windows | Latest installer |
+| [DeepSeekHarness-Setup-0.2.0-rc.1.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.2.0-rc.1.exe) | ~228 MB | Windows | Latest installer |
 
 > See [Releases](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases) for older versions.
 
@@ -32,7 +32,7 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 - Disk space: ~1.8 GB (install dir ~1.1 GB + user data ~0.7 GB)
 
 ### Install Steps (Windows)
-1. Download and double-click `DeepSeekHarness-Setup-0.1.7-rc.2.exe`
+1. Download and double-click `DeepSeekHarness-Setup-0.2.0-rc.1.exe`
 2. Choose an install location (default `%LOCALAPPDATA%\Programs\DeepSeekHarness`, **no administrator rights required**)
 3. Click "Install" and wait for it to finish
 4. A "DeepSeek Harness" shortcut is created on the desktop and in the Start menu
@@ -53,8 +53,8 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 ### Core & UI
 | Plugin | Version | Purpose |
 | --- | --- | --- |
-| @deepseek-ai/dsh-base | 0.1.7-rc.2 | Core runtime: agent, tools, sessions, subagents, goals, workflow orchestration |
-| @deepseek-ai/dsh-web-app | 0.1.7-rc.2 | The web GUI itself |
+| @deepseek-ai/dsh-base | 0.2.0-rc.1 | Core runtime: agent, tools, sessions, subagents, goals, workflow orchestration |
+| @deepseek-ai/dsh-web-app | 0.2.0-rc.1 | The web GUI itself |
 
 ### Office (Univer suite)
 | Plugin / Skill | Version | Purpose |
@@ -76,14 +76,14 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 ### Plugin Management
 | Plugin | Version | Purpose |
 | --- | --- | --- |
-| dshmarket | 1.66.3 | Visual plugin marketplace: browse, search and one-click install community plugins (needs network) |
+| dshmarket | 1.66.5 | Visual plugin marketplace: browse, search and one-click install community plugins (needs network) |
 | dsh-find-plugin | 0.4.0 | Search DSH plugins on GitHub from inside the agent (star-ranked, needs network) |
 
 ### Enhancements & Stats
 | Plugin | Version | Purpose |
 | --- | --- | --- |
-| dsh-better-sidebar | 0.22.1 | VSCode-like right sidebar: explorer / editor / terminal / Git / browser, isolated per session |
-| dsh-cost-meter | 1.7.40 | Session cost tracking: per-session & daily cost, history, official price sync, 90+ model pricing |
+| dsh-better-sidebar | 0.24.1 | VSCode-like right sidebar: explorer / editor / terminal / Git / browser, isolated per session |
+| dsh-cost-meter | 1.7.44 | Session cost tracking: per-session & daily cost, history, official price sync, 90+ model pricing |
 
 ## Notes
 
