@@ -4,11 +4,11 @@
 
 一键安装 DeepSeek Harness，内置 Node.js 与全部插件、依赖、技能，**完全离线可用**——用户无需安装 Node.js、无需联网拉取任何依赖。适用于**网络受限、无法通过终端正常安装 DeepSeek Harness** 的用户。
 
-> 版本：**0.1.7-rc.2** ｜ 内置 Node.js **v24.20.0** ｜ 适用 64 位 Windows 10 / 11（x64 / ARM64）
+> 版本：**0.2.0-rc.1** ｜ 内置 Node.js **v24.20.0** ｜ 适用 64 位 Windows 10 / 11（x64 / ARM64）
 
 ## 本版亮点
 
-- **服务与插件已升级至最新版本**：DSH 本体 **0.1.7-rc.2**，全部 7 个插件同步更新（dshmarket 1.66.3、dsh-better-sidebar 0.22.1、dsh-cost-meter 1.7.40、dsh-univer-office 0.3.5、dsh-find-plugin 0.4.0、@liustack/modsearch 5.10.5、dsh-update-checker 1.6.4）。
+- **服务与插件已升级至最新版本**：DSH 本体 **0.2.0-rc.1**，全部 7 个插件同步更新（dshmarket 1.66.5、dsh-better-sidebar 0.24.1、dsh-cost-meter 1.7.44、dsh-univer-office 0.3.5、dsh-find-plugin 0.4.0、@liustack/modsearch 5.10.5、dsh-update-checker 1.6.4）。
 - **对话界面现已支持 DeepSeek V4.1 模型**（`deepseek-flash` / DeepSeek-V41-Flash）：开箱默认启用，支持文本与图像输入，100 万 token 超长上下文。
 - **用户数据已移出安装目录**：历史会话、API Key、界面设置存放在 `%LOCALAPPDATA%\DeepSeekHarness`，**更换安装位置或重装都不会丢失**。
 - **修复 Windows 下浏览器自动翻译导致无法在会话框输入**：界面已声明禁止翻译，Chrome / Edge 不会再自动翻译本页面，拼音输入不再被翻译打断。
@@ -17,7 +17,7 @@
 
 | 文件 | 大小 | 平台 | 说明 |
 | --- | --- | --- | --- |
-| [DeepSeekHarness-Setup-0.1.7-rc.2.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.1.7-rc.2.exe) | 约 228 MB | Windows | 最新版安装包 |
+| [DeepSeekHarness-Setup-0.2.0-rc.1.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.2.0-rc.1.exe) | 约 228 MB | Windows | 最新版安装包 |
 
 > 历史版本见 [Releases](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases) 页面。
 
@@ -32,7 +32,7 @@
 - 磁盘空间：约 1.8 GB（安装目录约 1.1 GB + 用户数据约 0.7 GB）
 
 ### 安装步骤（Windows）
-1. 下载并双击 `DeepSeekHarness-Setup-0.1.7-rc.2.exe`
+1. 下载并双击 `DeepSeekHarness-Setup-0.2.0-rc.1.exe`
 2. 选择安装位置（默认 `%LOCALAPPDATA%\Programs\DeepSeekHarness`，全程**无需管理员权限**）
 3. 点击「安装」，等待进度条完成
 4. 安装完成后，桌面和开始菜单会自动生成「DeepSeek Harness」快捷方式
@@ -53,8 +53,8 @@
 ### 核心与界面
 | 插件 | 版本 | 用途 |
 | --- | --- | --- |
-| @deepseek-ai/dsh-base | 0.1.7-rc.2 | DSH 核心运行时：智能体、工具集、会话管理、子智能体、目标管理、工作流编排等基础能力 |
-| @deepseek-ai/dsh-web-app | 0.1.7-rc.2 | 网页图形界面本体 |
+| @deepseek-ai/dsh-base | 0.2.0-rc.1 | DSH 核心运行时：智能体、工具集、会话管理、子智能体、目标管理、工作流编排等基础能力 |
+| @deepseek-ai/dsh-web-app | 0.2.0-rc.1 | 网页图形界面本体 |
 
 ### 办公文档（Univer 套件）
 | 插件 / 技能 | 版本 | 用途 |
@@ -76,14 +76,14 @@
 ### 插件管理
 | 插件 | 版本 | 用途 |
 | --- | --- | --- |
-| dshmarket | 1.66.3 | 可视化插件市场：浏览、搜索并一键安装社区插件（需联网） |
+| dshmarket | 1.66.5 | 可视化插件市场：浏览、搜索并一键安装社区插件（需联网） |
 | dsh-find-plugin | 0.4.0 | 在智能体内从 GitHub 搜索 DSH 插件（按 star 排序，需联网） |
 
 ### 增强与统计
 | 插件 | 版本 | 用途 |
 | --- | --- | --- |
-| dsh-better-sidebar | 0.22.1 | 类 VSCode 的右侧边栏：资源管理器 / 编辑器 / 终端 / Git / 浏览器，按会话隔离 |
-| dsh-cost-meter | 1.7.40 | 会话费用统计：单会话与当日费用、历史记录、官方价格同步、多厂商 90+ 模型定价 |
+| dsh-better-sidebar | 0.24.1 | 类 VSCode 的右侧边栏：资源管理器 / 编辑器 / 终端 / Git / 浏览器，按会话隔离 |
+| dsh-cost-meter | 1.7.44 | 会话费用统计：单会话与当日费用、历史记录、官方价格同步、多厂商 90+ 模型定价 |
 
 ## 说明
 
