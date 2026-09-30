@@ -6,7 +6,7 @@ Note: the official DeepSeek Harness client is now available ([https://www.deepse
 
 One-click installer for DeepSeek Harness with Node.js and all plugins, dependencies and skills bundled in — **fully offline**. No Node.js installation, no network required. Intended for users on **restricted networks who cannot install DeepSeek Harness through a terminal**.
 
-> Version: **0.2.0-rc.2** ｜ Bundled Node.js **v24.20.0** ｜ 64-bit Windows 10 / 11 (x64 / ARM64)
+> Version: **0.2.0-rc.2** ｜ Bundled Node.js **v24.20.0** ｜ 64-bit Windows 10 / 11 (x64 / ARM64) and **macOS (Apple Silicon)**
 
 ## Highlights
 
@@ -20,6 +20,7 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 | File | Size | Platform | Notes |
 | --- | --- | --- | --- |
 | [DeepSeekHarness-Setup-0.2.0-rc.2.exe](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeekHarness-Setup-0.2.0-rc.2.exe) | ~228 MB | Windows | Latest installer |
+| [DeepSeek-Harness-Setup-0.2.0-rc.2-macOS.pkg](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases/latest/download/DeepSeek-Harness-Setup-0.2.0-rc.2-macOS.pkg) | ~342 MB | macOS (Apple Silicon) | Latest installer |
 
 > See [Releases](https://github.com/Echan1208/DeepSeek-Harness-Setup/releases) for older versions.
 
@@ -33,11 +34,26 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 - No Node.js needed, no network needed (runtime and all dependencies are bundled)
 - Disk space: ~1.8 GB (install dir ~1.1 GB + user data ~0.7 GB)
 
+**macOS (Apple Silicon)**
+- OS: **macOS 14 or later, Apple Silicon (M-series) only** — Intel Macs are not supported
+- No Node.js needed, no network needed (runtime and all dependencies are bundled)
+- Disk space: ~1.2 GB (install dir `/usr/local/lib/deepseek-harness` ~1.1 GB + user data ~0.1 GB)
+- Administrator rights are required to install (writes to `/usr/local` and `/Applications`)
+
 ### Install Steps (Windows)
 1. Download and double-click `DeepSeekHarness-Setup-0.2.0-rc.2.exe`
 2. Choose an install location (default `%LOCALAPPDATA%\Programs\DeepSeekHarness`, **no administrator rights required**)
 3. Click "Install" and wait for it to finish
 4. A "DeepSeek Harness" shortcut is created on the desktop and in the Start menu
+
+### Install Steps (macOS)
+1. Download `DeepSeek-Harness-Setup-0.2.0-rc.2-macOS.pkg`
+2. Double-click it, or run:
+   ```bash
+   sudo installer -pkg DeepSeek-Harness-Setup-0.2.0-rc.2-macOS.pkg -target /
+   ```
+3. Open **DeepSeek Harness** from Launchpad or Applications and keep its icon in the Dock
+4. The GUI is rendered by the app's own window — **no separate Chrome install or launch is needed**. Closing the window stops the service; clicking the Dock icon starts it again
 
 ### First Use
 1. Double-click the "DeepSeek Harness" desktop shortcut
@@ -45,10 +61,37 @@ One-click installer for DeepSeek Harness with Node.js and all plugins, dependenc
 3. Enter your own DeepSeek API Key in the UI — the installer contains **no keys**; each user uses their own
 4. You're ready to go
 
+> macOS user data lives in `~/.dsh` (sessions, API key, settings) — the equivalent of `%LOCALAPPDATA%\DeepSeekHarness` on Windows.
+
 ### Uninstall
 - Option 1: Settings → Apps → DeepSeek Harness → Uninstall
 - Option 2: Run `uninstall.exe` in the install directory
 - Uninstall asks whether to delete your user data too; choose "No" to **keep your API key, settings and sessions** (stored in `%LOCALAPPDATA%\DeepSeekHarness`) so a reinstall continues where you left off.
+
+### Uninstall (macOS)
+
+**Option 1: Finder (simple)**
+1. Open Finder → Applications and drag **DeepSeek Harness** to the Trash
+2. The app is removed; **the service, bundled runtime and plugins remain in `/usr/local/lib/deepseek-harness`**, and your data stays in `~/.dsh`
+3. To remove those too, use option 2
+
+**Option 2: Terminal (thorough)**
+```bash
+# remove the app
+rm -rf "/Applications/DeepSeek Harness.app"
+
+# remove the service, bundled runtime and all plugins
+rm -rf /usr/local/lib/deepseek-harness
+
+# remove the CLI entry points
+rm -f /usr/local/bin/dsh /usr/local/bin/pnpm
+
+# remove the profile symlink in your home directory (a symlink only)
+rm -f ~/.dsh/profiles
+
+# optional: also delete sessions, API key and UI settings
+rm -rf ~/.dsh
+```
 
 ## Included Plugins
 
