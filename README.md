@@ -2,7 +2,7 @@
 
 # DeepSeek Harness 安装包（离线安装版）
 
-由于 DeepSeek Harness 官方客户端已推出（https://www.deepseek.com/harness/），故将减少本仓库的更新与维护力度，有需要的请移步至官方客户端下载，感谢各位的支持。
+由于 DeepSeek Harness 官方客户端已推出（[https://www.deepseek.com/harness/](https://www.deepseek.com/harness/)），故将减少本仓库的更新与维护力度，有需要的请移步至官方客户端下载，感谢各位的支持。
 
 一键安装 DeepSeek Harness，内置 Node.js 与全部插件、依赖、技能，**完全离线可用**——用户无需安装 Node.js、无需联网拉取任何依赖。适用于**网络受限、无法通过终端正常安装 DeepSeek Harness** 的用户。
 
