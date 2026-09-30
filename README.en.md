@@ -2,7 +2,7 @@
 
 # DeepSeek Harness Installer (Offline Edition)
 
-Note: the official DeepSeek Harness client is now available (https://www.deepseek.com/harness/). This repository will therefore receive reduced updates and maintenance — if you need it, please move to the official client. Thank you for your support.
+Note: the official DeepSeek Harness client is now available ([https://www.deepseek.com/harness/](https://www.deepseek.com/harness/)). This repository will therefore receive reduced updates and maintenance — if you need it, please move to the official client. Thank you for your support.
 
 One-click installer for DeepSeek Harness with Node.js and all plugins, dependencies and skills bundled in — **fully offline**. No Node.js installation, no network required. Intended for users on **restricted networks who cannot install DeepSeek Harness through a terminal**.
 
